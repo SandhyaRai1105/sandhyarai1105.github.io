@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    main{
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    background: #88b2db;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    }
+    a {
+    color: #00796b;
+    margin-left: auto;
+    }
+    #header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    }
+    h1{
+        font-weight: 600;
+        font-size: larger;
+    }
+    img{
+        border-radius: 5px 5px 0 0;
+    }
+
+    #banner {
+    position: relative;
+    min-height: 100vh;
+    background: url('../banner.jpg') center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    #banner .inner {
+    color: white;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+    #banner .button {
+    margin-top: 1.5rem;
+    }
+
+    .image.fit img {
+    width: 100%;
+    border-radius: 8px;
+    }
+
+    .output-box {
+    margin-top: 5px;
+    font-weight: bold;
+    }
+
+    button {
+    background: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    color: red;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    }
+
+    #footer {
+    padding: 2px;
+    text-align: center;
+    background: #b2dfdb;
+    position: relative;
+    }
+    #share{
+        font-size: larger;
+        font-weight: 300;
+    }
+    .template-link{
+        font-size: larger;
+        font-weight: 400;
+    }
+    #moreimage{
+        border-radius: 50%;
+        width: 370px;
+        height: 420px;
+        margin: 20px;
+    }
+</style>
+</head>
+<body class="w3-light-grey">
+    <main>
+        
+<div class="w3-content" style="max-width:1400px">
+
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">Sandhya</span></p>
+  <p>The link to the original template lies <a href="https://www.w3schools.com/w3css/tryw3css_templates_blog.htm" class="template-link">here</a></p>
+  <p>
+    <section id="share" class="wrapper alt style2">
+        <div class="inner">
+            <h2>Share Your Favorite Holiday Destination</h2>
+            <button onclick="favoriteSpot()">Click to Enter Your Favorite Spot</button>
+            <p id="spot-output" class="output-box"></p>
+        </div>
+    </section>
+  </p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="./banner.jpg" alt="Underwater" style="width:100%">
+    <div class="w3-container">
+      <h3><b>TITLE HEADING</b></h3>
+      <h5>Title description, <span class="w3-opacity">July 11, 2025</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Futo Beach in Shizuoka is a small, pebbly beach known for its clear water and suitability for snorkeling and diving. It's a popular spot for observing marine life and exploring a cave located on the coast.</p>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="./holiday.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>BLOG ENTRY</b></h3>
+      <h5>Title description, <span class="w3-opacity">July 14, 2025</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>The beach is part of the Futo Coast, which also features unique geological formations like magmatic dikes and strangely shaped, plate-like rocks. 
+</p>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+        <img src="image.jpg" alt="more" id="moreimage">
+    <div class="w3-container w3-white">
+      <h4><b>My Name</b></h4>
+      <p>Hi I am Sandhya Bantawa Rai. And this is my try on my project.</p>
+    </div>
+  </div><hr>
+  
+  
+</div>
+
+</div><br>
+
+</div>
+
+<footer id="footer">
+    <p>Student ID: 24224567 | Name: Sandhya Bantawa Rai</p>
+</footer>
+
+    </main>
+
+
+  <script>
+    window.onload = function () {
+      alert("Welcome to My Blog!");
+    };
+    function favoriteSpot() {
+      let spot = prompt("What's your favourite holiday destination?");
+      let output = document.getElementById("spot-output");
+      if (spot) {
+        output.innerText = "Your favorite holiday spot is: " + spot;
+        output.style.color = "#00796b";
+      } else {
+        output.innerText = "You didn't enter a holiday destination.";
+        output.style.color = "#b71c1c";
+      }
+    }
+  </script>
+
+</body>
+</html>
